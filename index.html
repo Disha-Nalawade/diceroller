@@ -48,8 +48,25 @@
       <button type="button" class="btn" onclick="roll()">Dice</button>
     </div>
     <script>
-      const icon = document.getElementById("icon");
-      
+      function roll() {
+        const icon = document.getElementById("icon");
+        const min = 1;
+        const max = 7;
+        const randomNumber = Math.floor(Math.random() * (max - min)) + min;
+        if (randomNumber == 1) {
+          icon.src = "./img/1.png";
+        } else if (randomNumber == 2) {
+          icon.src = "./img/2.png";
+        } else if (randomNumber == 3) {
+          icon.src = "./img/3.png";
+        } else if (randomNumber == 4) {
+          icon.src = "./img/4.png";
+        } else if (randomNumber == 5) {
+          icon.src = "./img/5.png";
+        } else {
+          icon.src = "./img/1.png";
+        }
+      }
     </script>
   </body>
 </html>
