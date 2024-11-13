@@ -18,7 +18,7 @@
         font-family: "Courier New", Courier, monospace;
       }
       .icon {
-        width: 300px;
+        width: 200px;
         display: block;
         margin: 20px auto;
       }
@@ -39,13 +39,17 @@
   <body>
     <div class="container">
       <h1 class="heading">Dice Roller</h1>
-      <img src="./img/1.png" alt="1" class="icon" />
+      <img src="./img/1.png" alt="1" class="icon" id="icon" />
       <!-- <img src="./img/2.png" alt="2" class="icon" />
       <img src="./img/3.png" alt="3" class="icon" />
       <img src="./img/4.png" alt="4" class="icon" />
       <img src="./img/5.png" alt="5" class="icon" />
       <img src="./img/6.png" alt="6" class="icon" /> -->
-      <button type="button" class="btn">Dice</button>
+      <button type="button" class="btn" onclick="roll()">Dice</button>
     </div>
+    <script>
+      const icon = document.getElementById("icon");
+      
+    </script>
   </body>
 </html>
