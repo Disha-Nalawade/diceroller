@@ -10,6 +10,12 @@
         width: 400px;
         display: block;
         margin: 20px auto;
+        border-radius: 20px;
+        box-shadow: 1px 2px 3px 5px grey;
+      }
+      .heading {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
       }
       .icon {
         width: 300px;
@@ -23,11 +29,16 @@
         display: block;
         margin: 20px auto;
       }
+      .btn:hover {
+        box-shadow: 1px 2px 3px 1px black;
+        background-color: antiquewhite;
+        color: black;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Dice Roller</h1>
+      <h1 class="heading">Dice Roller</h1>
       <img src="./img/1.png" alt="1" class="icon" />
       <!-- <img src="./img/2.png" alt="2" class="icon" />
       <img src="./img/3.png" alt="3" class="icon" />
